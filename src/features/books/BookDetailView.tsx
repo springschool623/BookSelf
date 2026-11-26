@@ -52,10 +52,13 @@ export function BookDetailView({ bookId }: { bookId: string }) {
   const mapsCount = useMindMapStore(
     (s) => s.mindmaps.filter((m) => m.bookId === bookId).length
   );
-  const relatedJournals = useJournalStore((s) =>
-    s.journals
-      .filter((j) => j.bookIds.includes(bookId))
-      .sort((a, b) => b.date.localeCompare(a.date))
+  const journals = useJournalStore((s) => s.journals);
+  const relatedJournals = React.useMemo(
+    () =>
+      journals
+        .filter((j) => j.bookIds.includes(bookId))
+        .sort((a, b) => b.date.localeCompare(a.date)),
+    [journals, bookId]
   );
 
   const [activeTab, setActiveTab] = React.useState('overview');
