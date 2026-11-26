@@ -1,0 +1,112 @@
+[
+  {
+    "id": "journal-1",
+    "date": "2026-11-25",
+    "title": "Nút thắt toán học trong Phía sau nghi can X",
+    "contentHtml": "<p>Đọc tới đoạn Yukawa và Ishigami đi bộ bên bờ sông. Cách tác giả đặt vấn đề <strong>bằng chứng ngoại phạm giả</strong> thực sự quá tinh vi. Cần cập nhật sơ đồ nhân vật để không bỏ sót chi tiết thời gian.</p><blockquote>\"Đôi khi những bài toán tưởng chừng không thể giải lại có đáp án đơn giản đến tàn nhẫn.\"</blockquote>",
+    "mood": "curious",
+    "bookIds": ["book-suspect-x"],
+    "pagesRead": 48,
+    "createdAt": "2026-11-25T22:15:00.000Z",
+    "updatedAt": "2026-11-25T22:15:00.000Z"
+  },
+  {
+    "id": "journal-2",
+    "date": "2026-11-20",
+    "title": "Hệ thống hóa phả hệ nhà Trần",
+    "contentHtml": "<p>Hôm nay đọc phần <strong>Trần Thái Tông</strong> và cuộc kháng chiến chống Nguyên Mông lần thứ nhất. Vì các vua và thân vương nhà Trần có nhiều tên húy và tước hiệu gần giống nhau, mình đã vẽ hẳn một cây phả hệ để dễ tra cứu khi đọc tiếp.</p>",
+    "mood": "thoughtful",
+    "bookIds": ["book-dai-viet"],
+    "pagesRead": 35,
+    "createdAt": "2026-11-20T21:00:00.000Z",
+    "updatedAt": "2026-11-20T21:00:00.000Z"
+  },
+  {
+    "id": "journal-3",
+    "date": "2026-11-18",
+    "title": "Buổi sáng cùng Marcus Aurelius",
+    "contentHtml": "<p>Đọc hai chương đầu <em>Suy tưởng</em> trước khi bắt đầu ngày làm việc. Nhắc nhở bản thân chỉ tập trung vào những gì nằm trong tầm kiểm soát của mình.</p>",
+    "mood": "calm",
+    "bookIds": ["book-meditations"],
+    "pagesRead": 22,
+    "createdAt": "2026-11-18T07:45:00.000Z",
+    "updatedAt": "2026-11-18T07:45:00.000Z"
+  },
+  {
+    "id": "journal-4",
+    "date": "2026-09-22",
+    "title": "Khép lại Tam Thể với cảm giác choáng ngợp",
+    "contentHtml": "<p>Quy mô vũ trụ và giả thuyết <strong>Khu rừng tối</strong> bắt đầu hé lộ. Kết hợp vật lý lượng tử với bối cảnh lịch sử tạo nên chiều sâu rất hiếm gặp.</p>",
+    "mood": "excited",
+    "bookIds": ["book-three-body"],
+    "pagesRead": 65,
+    "createdAt": "2026-09-22T22:30:00.000Z",
+    "updatedAt": "2026-09-22T22:30:00.000Z"
+  },
+  {
+    "id": "journal-5",
+    "date": "2026-08-19",
+    "title": "Cảm hứng từ Đốm xanh mờ",
+    "contentHtml": "<p>Carl Sagan viết khoa học như làm thơ. Chương về tàu Voyager khiến mình nhận ra lịch sử nhân loại thực ra gắn kết thế nào.</p>",
+    "mood": "inspired",
+    "bookIds": ["book-cosmos", "book-sapiens"],
+    "pagesRead": 40,
+    "createdAt": "2026-08-19T21:40:00.000Z",
+    "updatedAt": "2026-08-19T21:40:00.000Z"
+  },
+  {
+    "id": "journal-6",
+    "date": "2026-07-21",
+    "title": "Giải mã hòn đảo Soldier Island",
+    "contentHtml": "<p>Một tuyệt tác của Agatha Christie khi không có thám tử chuyên nghiệp mà toàn bộ câu chuyện tự siết chặt vòng vây tâm lý.</p>",
+    "mood": "excited",
+    "bookIds": ["book-and-then-there-were-none"],
+    "pagesRead": 70,
+    "createdAt": "2026-07-21T23:10:00.000Z",
+    "updatedAt": "2026-07-21T23:10:00.000Z"
+  },
+  {
+    "id": "journal-7",
+    "date": "2026-06-18",
+    "title": "So sánh Harari và Jared Diamond",
+    "contentHtml": "<p>Đọc xong <em>Súng, Vi trùng và Thép</em>, thấy góc nhìn sinh thái – địa lý bổ sung rất tốt cho góc nhìn văn hóa – nhận thức trong <em>Sapiens</em>.</p>",
+    "mood": "thoughtful",
+    "bookIds": ["book-guns-germs-steel", "book-sapiens"],
+    "pagesRead": 52,
+    "createdAt": "2026-06-18T21:15:00.000Z",
+    "updatedAt": "2026-06-18T21:15:00.000Z"
+  },
+  {
+    "id": "journal-8",
+    "date": "2026-04-22",
+    "title": "Tổng kết dòng thời gian Thế chiến II",
+    "contentHtml": "<p>Hoàn thành cuốn sách đồ sộ của Antony Beevor. Việc vẽ timeline các mốc 1939–1945 giúp nhìn rõ sự liên kết giữa mặt trận Đông Âu và Thái Bình Dương.</p>",
+    "mood": "inspired",
+    "bookIds": ["book-ww2"],
+    "pagesRead": 60,
+    "createdAt": "2026-04-22T22:00:00.000Z",
+    "updatedAt": "2026-04-22T22:00:00.000Z"
+  },
+  {
+    "id": "journal-9",
+    "date": "2026-02-08",
+    "title": "Cú twist trên chuyến tàu Phương Đông",
+    "contentHtml": "<p>Hercule Poirot đưa ra hai giả thuyết cuối cùng trước toàn bộ hành khách toa Istanbul-Calais. Quá xuất sắc về mặt đạo đức và công lý.</p>",
+    "mood": "excited",
+    "bookIds": ["book-orient-express"],
+    "pagesRead": 54,
+    "createdAt": "2026-02-08T22:20:00.000Z",
+    "updatedAt": "2026-02-08T22:20:00.000Z"
+  },
+  {
+    "id": "journal-10",
+    "date": "2026-01-24",
+    "title": "Hoàn thành cuốn sách đầu tiên của năm",
+    "contentHtml": "<p><em>Sapiens</em> mở ra nhiều câu hỏi thú vị về tiền tệ, tôn giáo và hạnh phúc con người. Một khởi đầu năm đọc sách rất trọn vẹn.</p>",
+    "mood": "inspired",
+    "bookIds": ["book-sapiens"],
+    "pagesRead": 45,
+    "createdAt": "2026-01-24T21:10:00.000Z",
+    "updatedAt": "2026-01-24T21:10:00.000Z"
+  }
+]

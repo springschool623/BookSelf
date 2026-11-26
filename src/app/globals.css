@@ -1,26 +1,133 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #faf6ef;
+  --bg-secondary: #f3ecdf;
+  --bg-card: #fffdf9;
+  --bg-muted: #ede4d3;
+  --text-primary: #2c2218;
+  --text-secondary: #625241;
+  --text-muted: #8b7966;
+  --border-color: #dfd3bf;
+  --accent-primary: #8b4513;
+  --accent-primary-hover: #70360e;
+  --accent-secondary: #b4692e;
+  --accent-soft: #f5e6d3;
+  --ring-color: #a45a2a;
+}
+
+.dark {
+  --bg-primary: #171411;
+  --bg-secondary: #1f1b17;
+  --bg-card: #241f1a;
+  --bg-muted: #2e2721;
+  --text-primary: #f2ebe1;
+  --text-secondary: #c7bbae;
+  --text-muted: #988b7d;
+  --border-color: #3a3128;
+  --accent-primary: #d4894a;
+  --accent-primary-hover: #e29b5e;
+  --accent-secondary: #b7743d;
+  --accent-soft: #35281e;
+  --ring-color: #d4894a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg-primary);
+  --color-foreground: var(--text-primary);
+  --font-sans: var(--font-inter), var(--font-noto-sc), system-ui, sans-serif;
+  --font-serif: var(--font-lora), var(--font-noto-sc), Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+
+/* TipTap editor prose styles */
+.tiptap {
+  outline: none;
+  min-height: 180px;
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+  color: var(--text-muted);
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.tiptap ul {
+  list-style-type: disc;
+  padding-left: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.tiptap ol {
+  list-style-type: decimal;
+  padding-left: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.tiptap blockquote {
+  border-left: 3px solid var(--accent-primary);
+  padding-left: 0.9rem;
+  margin: 0.6rem 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.tiptap h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.75rem 0 0.35rem;
+}
+
+.tiptap h3 {
+  font-size: 1.075rem;
+  font-weight: 600;
+  margin: 0.6rem 0 0.25rem;
+}
+
+/* React Flow subtle dark mode polish */
+.dark .react-flow__controls-button {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.dark .react-flow__controls-button svg {
+  fill: currentColor;
+}
+
+.dark .react-flow__minimap {
+  background-color: var(--bg-secondary);
+}
+
+/* Detective Case Playground surfaces */
+.playground-corkboard {
+  background-color: #d9bf98;
+  background-image: radial-gradient(rgba(92, 58, 28, 0.14) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.dark .playground-corkboard {
+  background-color: #463725;
+  background-image: radial-gradient(rgba(255, 226, 179, 0.12) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.playground-noir {
+  background-color: #161412;
+  background-image: radial-gradient(rgba(220, 38, 38, 0.14) 1px, transparent 1px);
+  background-size: 20px 20px;
 }

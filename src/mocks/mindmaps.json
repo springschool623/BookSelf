@@ -1,0 +1,249 @@
+[
+  {
+    "id": "map-orient-express",
+    "bookId": "book-orient-express",
+    "title": "Sơ đồ vụ án Chuyến tàu Phương Đông",
+    "kind": "case-board",
+    "nodes": [
+      {
+        "id": "oe-poirot",
+        "type": "character",
+        "position": { "x": 300, "y": 20 },
+        "data": {
+          "label": "Hercule Poirot",
+          "role": "Thám tử",
+          "description": "Thám tử người Bỉ điều tra toàn bộ 12 hành khách trong toa Calais."
+        }
+      },
+      {
+        "id": "oe-ratchett",
+        "type": "character",
+        "position": { "x": 300, "y": 170 },
+        "data": {
+          "label": "Samuel Ratchett (Cassetti)",
+          "role": "Nạn nhân",
+          "description": "Kẻ chủ mưu vụ bắt cóc Daisy Armstrong năm xưa.",
+          "isSuspect": false
+        }
+      },
+      {
+        "id": "oe-clue-watch",
+        "type": "clue",
+        "position": { "x": 40, "y": 170 },
+        "data": {
+          "label": "Đồng hồ vỡ lúc 1:15",
+          "description": "Manh mối giả đánh lạc hướng thời điểm tử vong."
+        }
+      },
+      {
+        "id": "oe-clue-12stabs",
+        "type": "clue",
+        "position": { "x": 560, "y": 170 },
+        "data": {
+          "label": "12 nhát dao khác nhau",
+          "description": "Nhát mạnh, nhát yếu, cả tay trái và tay phải — dấu hiệu tập thể."
+        }
+      },
+      {
+        "id": "oe-hubbard",
+        "type": "character",
+        "position": { "x": 80, "y": 340 },
+        "data": {
+          "label": "Bà Hubbard (Linda Arden)",
+          "role": "Chủ mưu / Bà ngoại Daisy",
+          "description": "Nữ diễn viên kịch lừng danh, người kết nối kế hoạch báo thù.",
+          "isSuspect": true
+        }
+      },
+      {
+        "id": "oe-arden",
+        "type": "character",
+        "position": { "x": 300, "y": 340 },
+        "data": {
+          "label": "Mary Debenham & Đại tá Arbuthnot",
+          "role": "Gia sư & Bạn thân Armstrong",
+          "description": "Tạo chứng cứ ngoại phạm chéo cho nhau.",
+          "isSuspect": true
+        }
+      },
+      {
+        "id": "oe-michel",
+        "type": "character",
+        "position": { "x": 540, "y": 340 },
+        "data": {
+          "label": "Pierre Michel (Trưởng toa)",
+          "role": "Cha của người hầu gái bị oan",
+          "description": "Con gái ông từng tự sát vì bị nghi oan trong vụ Armstrong.",
+          "isSuspect": true
+        }
+      }
+    ],
+    "edges": [
+      { "id": "e-oe-1", "source": "oe-poirot", "target": "oe-ratchett", "label": "điều tra" },
+      { "id": "e-oe-2", "source": "oe-clue-watch", "target": "oe-ratchett", "label": "tại buồng 2" },
+      { "id": "e-oe-3", "source": "oe-clue-12stabs", "target": "oe-ratchett", "label": "bằng chứng" },
+      { "id": "e-oe-4", "source": "oe-hubbard", "target": "oe-ratchett", "label": "chủ mưu báo thù" },
+      { "id": "e-oe-5", "source": "oe-arden", "target": "oe-ratchett", "label": "đồng phạm" },
+      { "id": "e-oe-6", "source": "oe-michel", "target": "oe-ratchett", "label": "hỗ trợ tiếp cận" }
+    ],
+    "createdAt": "2026-02-07T10:00:00.000Z",
+    "updatedAt": "2026-02-08T22:00:00.000Z"
+  },
+  {
+    "id": "map-ww2-timeline",
+    "bookId": "book-ww2",
+    "title": "Dòng thời gian Thế chiến II (1939–1945)",
+    "kind": "timeline",
+    "nodes": [
+      {
+        "id": "ww2-1939",
+        "type": "event",
+        "position": { "x": 40, "y": 140 },
+        "data": {
+          "label": "Đức tấn công Ba Lan",
+          "date": "01/09/1939",
+          "description": "Chiến tranh thế giới thứ hai bùng nổ tại châu Âu."
+        }
+      },
+      {
+        "id": "ww2-1941",
+        "type": "event",
+        "position": { "x": 280, "y": 140 },
+        "data": {
+          "label": "Barbarossa & Trân Châu Cảng",
+          "date": "1941",
+          "description": "Đức xâm lược Liên Xô (6/1941); Nhật tấn công Trân Châu Cảng (12/1941)."
+        }
+      },
+      {
+        "id": "ww2-1942",
+        "type": "event",
+        "position": { "x": 520, "y": 140 },
+        "data": {
+          "label": "Midway & Stalingrad",
+          "date": "1942–1943",
+          "description": "Bước ngoặt chiến lược trên cả mặt trận Thái Bình Dương và Đông Âu."
+        }
+      },
+      {
+        "id": "ww2-1944",
+        "type": "event",
+        "position": { "x": 760, "y": 140 },
+        "data": {
+          "label": "Đổ bộ Normandy (D-Day)",
+          "date": "06/06/1944",
+          "description": "Quân Đồng Minh mở mặt trận phía Tây."
+        }
+      },
+      {
+        "id": "ww2-1945",
+        "type": "event",
+        "position": { "x": 1000, "y": 140 },
+        "data": {
+          "label": "Chiến tranh kết thúc",
+          "date": "05–09/1945",
+          "description": "Đức đầu hàng (8/5) và Nhật đầu hàng (2/9)."
+        }
+      }
+    ],
+    "edges": [
+      { "id": "e-ww2-1", "source": "ww2-1939", "target": "ww2-1941", "label": "lan rộng" },
+      { "id": "e-ww2-2", "source": "ww2-1941", "target": "ww2-1942", "label": "đỉnh điểm Trục" },
+      { "id": "e-ww2-3", "source": "ww2-1942", "target": "ww2-1944", "label": "phản công" },
+      { "id": "e-ww2-4", "source": "ww2-1944", "target": "ww2-1945", "label": "sụp đổ" }
+    ],
+    "createdAt": "2026-04-15T10:00:00.000Z",
+    "updatedAt": "2026-04-22T22:00:00.000Z"
+  },
+  {
+    "id": "map-tran-dynasty",
+    "bookId": "book-dai-viet",
+    "title": "Phả hệ đầu triều Nhà Trần",
+    "kind": "family-tree",
+    "nodes": [
+      {
+        "id": "tran-thua",
+        "type": "character",
+        "position": { "x": 280, "y": 20 },
+        "data": {
+          "label": "Trần Thừa (Thái Tổ)",
+          "role": "Thượng hoàng",
+          "date": "1184–1234",
+          "description": "Cha của Trần Thái Tông và Trần Liễu."
+        }
+      },
+      {
+        "id": "tran-thudo",
+        "type": "character",
+        "position": { "x": 540, "y": 20 },
+        "data": {
+          "label": "Trần Thủ Độ",
+          "role": "Thái sư",
+          "date": "1194–1264",
+          "description": "Người đặt nền móng dựng nên cơ nghiệp nhà Trần."
+        }
+      },
+      {
+        "id": "tran-lieu",
+        "type": "character",
+        "position": { "x": 120, "y": 170 },
+        "data": {
+          "label": "Trần Liễu (An Sinh Vương)",
+          "role": "Anh trưởng",
+          "date": "1211–1251"
+        }
+      },
+      {
+        "id": "tran-canh",
+        "type": "character",
+        "position": { "x": 400, "y": 170 },
+        "data": {
+          "label": "Trần Cảnh (Trần Thái Tông)",
+          "role": "Vua đầu tiên (1225–1258)",
+          "date": "1218–1277"
+        }
+      },
+      {
+        "id": "tran-quoc-tuan",
+        "type": "character",
+        "position": { "x": 120, "y": 330 },
+        "data": {
+          "label": "Trần Quốc Tuấn (Hưng Đạo Vương)",
+          "role": "Quốc công Tiết chế",
+          "date": "1228–1300",
+          "description": "Tổng chỉ huy 2 lần đại thắng quân Nguyên Mông."
+        }
+      },
+      {
+        "id": "tran-hoang",
+        "type": "character",
+        "position": { "x": 400, "y": 330 },
+        "data": {
+          "label": "Trần Hoảng (Trần Thánh Tông)",
+          "role": "Vua thứ 2 (1258–1278)",
+          "date": "1240–1290"
+        }
+      },
+      {
+        "id": "tran-kham",
+        "type": "character",
+        "position": { "x": 400, "y": 480 },
+        "data": {
+          "label": "Trần Khâm (Trần Nhân Tông)",
+          "role": "Vua thứ 3 & Sơ tổ Trúc Lâm",
+          "date": "1258–1308"
+        }
+      }
+    ],
+    "edges": [
+      { "id": "e-tr-1", "source": "tran-thua", "target": "tran-lieu", "label": "con trưởng" },
+      { "id": "e-tr-2", "source": "tran-thua", "target": "tran-canh", "label": "con thứ" },
+      { "id": "e-tr-3", "source": "tran-thudo", "target": "tran-canh", "label": "phò tá" },
+      { "id": "e-tr-4", "source": "tran-lieu", "target": "tran-quoc-tuan", "label": "cha con" },
+      { "id": "e-tr-5", "source": "tran-canh", "target": "tran-hoang", "label": "truyền ngôi" },
+      { "id": "e-tr-6", "source": "tran-hoang", "target": "tran-kham", "label": "truyền ngôi" }
+    ],
+    "createdAt": "2026-11-20T21:00:00.000Z",
+    "updatedAt": "2026-11-20T21:30:00.000Z"
+  }
+]

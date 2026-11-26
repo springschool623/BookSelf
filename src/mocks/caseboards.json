@@ -1,0 +1,306 @@
+[
+  {
+    "id": "case-orient-express",
+    "bookId": "book-orient-express",
+    "title": "Vụ án Chuyến tàu tốc hành Phương Đông",
+    "theme": "corkboard",
+    "nodes": [
+      {
+        "id": "oe-n-victim",
+        "type": "suspect",
+        "position": { "x": 360, "y": 40 },
+        "data": {
+          "label": "Samuel Ratchett (Cassetti)",
+          "role": "Nạn nhân",
+          "suspectStatus": "victim",
+          "suspicionLevel": 0,
+          "chapter": 2,
+          "page": 52,
+          "description": "Bị sát hại trong buồng số 2 toa Istanbul-Calais."
+        }
+      },
+      {
+        "id": "oe-n-hubbard",
+        "type": "suspect",
+        "position": { "x": 60, "y": 280 },
+        "data": {
+          "label": "Bà Hubbard (Linda Arden)",
+          "role": "Hành khách buồng 3",
+          "suspectStatus": "prime",
+          "suspicionLevel": 85,
+          "motive": "Bà ngoại của bé Daisy Armstrong",
+          "chapter": 5,
+          "description": "Khẳng định có người đàn ông trốn trong buồng mình đêm xảy ra án mạng."
+        }
+      },
+      {
+        "id": "oe-n-debenham",
+        "type": "suspect",
+        "position": { "x": 360, "y": 310 },
+        "data": {
+          "label": "Mary Debenham",
+          "role": "Gia sư",
+          "suspectStatus": "prime",
+          "suspicionLevel": 60,
+          "motive": "Từng làm gia sư cho gia đình Armstrong",
+          "chapter": 5,
+          "description": "Thái độ điềm tĩnh bất thường khi tàu dừng."
+        }
+      },
+      {
+        "id": "oe-n-michel",
+        "type": "suspect",
+        "position": { "x": 660, "y": 290 },
+        "data": {
+          "label": "Pierre Michel",
+          "role": "Trưởng toa",
+          "suspectStatus": "alibi",
+          "suspicionLevel": 45,
+          "motive": "Cha của người hầu gái bị oan tự sát",
+          "chapter": 6,
+          "description": "Giữ chìa khóa vạn năng của toàn bộ toa."
+        }
+      },
+      {
+        "id": "oe-n-clue-watch",
+        "type": "clue",
+        "position": { "x": 80, "y": 40 },
+        "data": {
+          "label": "Đồng hồ vỡ kim chỉ 1:15",
+          "reliability": "red-herring",
+          "chapter": 4,
+          "page": 72,
+          "description": "Tìm thấy trong túi áo nạn nhân, nhưng dấu hiệu tử vong không khớp."
+        }
+      },
+      {
+        "id": "oe-n-clue-stabs",
+        "type": "clue",
+        "position": { "x": 660, "y": 40 },
+        "data": {
+          "label": "12 vết dao khác nhau",
+          "reliability": "verified",
+          "chapter": 6,
+          "page": 112,
+          "sourceNoteId": "note-5",
+          "description": "Có vết đâm mạnh, vết nhẹ, cả thuận tay phải lẫn tay trái."
+        }
+      },
+      {
+        "id": "oe-n-alibi-dining",
+        "type": "alibi",
+        "position": { "x": 60, "y": 520 },
+        "data": {
+          "label": "Tiếng động lúc 00:37 & nhân chứng",
+          "timeLabel": "00:37 - 01:00 AM",
+          "witness": "Poirot & MacQueen",
+          "alibiVerified": false,
+          "chapter": 5,
+          "description": "Poirot nghe tiếng nói từ buồng Ratchett lúc 00:37 — sau giờ đồng hồ vỡ hoặc trước 1:15?"
+        }
+      },
+      {
+        "id": "oe-n-loc-berth2",
+        "type": "location",
+        "position": { "x": 370, "y": 530 },
+        "data": {
+          "label": "Buồng số 2 (Khóa trái trong)",
+          "chapter": 3,
+          "description": "Cửa sổ mở hé nhưng không có dấu chân ngoài tuyết."
+        }
+      },
+      {
+        "id": "oe-n-sticky-1",
+        "type": "sticky",
+        "position": { "x": 670, "y": 520 },
+        "data": {
+          "label": "12 hành khách = 12 bồi thẩm đoàn?",
+          "stickyColor": "yellow",
+          "chapter": 8,
+          "description": "Kiểm tra lại mối liên hệ giữa tất cả hành khách với vụ bắt cóc Daisy Armstrong!"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "oe-e-1",
+        "source": "oe-n-hubbard",
+        "target": "oe-n-victim",
+        "label": "Chủ mưu báo thù",
+        "kind": "suspect"
+      },
+      {
+        "id": "oe-e-2",
+        "source": "oe-n-debenham",
+        "target": "oe-n-victim",
+        "label": "Đồng phạm",
+        "kind": "suspect"
+      },
+      {
+        "id": "oe-e-3",
+        "source": "oe-n-clue-watch",
+        "target": "oe-n-alibi-dining",
+        "label": "Mâu thuẫn thời gian",
+        "kind": "contradicts"
+      },
+      {
+        "id": "oe-e-4",
+        "source": "oe-n-clue-stabs",
+        "target": "oe-n-victim",
+        "label": "Khám nghiệm tử thi",
+        "kind": "related"
+      },
+      {
+        "id": "oe-e-5",
+        "source": "oe-n-michel",
+        "target": "oe-n-loc-berth2",
+        "label": "Chìa khóa vạn năng",
+        "kind": "alibi"
+      },
+      {
+        "id": "oe-e-6",
+        "source": "oe-n-sticky-1",
+        "target": "oe-n-clue-stabs",
+        "label": "12 nhát = 12 người",
+        "kind": "related"
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "hyp-oe-1",
+        "title": "Hung thủ đơn lẻ đột nhập từ toa khác rồi nhảy xuống tuyết",
+        "status": "disproved",
+        "supportingNodeIds": ["oe-n-clue-watch"],
+        "contradictingNodeIds": ["oe-n-loc-berth2", "oe-n-clue-stabs"],
+        "notes": "Không có dấu chân trên tuyết quanh toa xe và 12 vết dao không thể do 1 người tạo ra."
+      },
+      {
+        "id": "hyp-oe-2",
+        "title": "Âm mưu báo thù tập thể của gia đình Armstrong",
+        "suspectNodeId": "oe-n-hubbard",
+        "status": "confirmed",
+        "supportingNodeIds": ["oe-n-clue-stabs", "oe-n-sticky-1"],
+        "contradictingNodeIds": [],
+        "notes": "Cả 12 hành khách trong toa đều gắn với bi kịch Armstrong; đồng hồ 1:15 là bẫy đánh lạc hướng."
+      }
+    ],
+    "createdAt": "2026-02-05T10:00:00.000Z",
+    "updatedAt": "2026-02-08T22:00:00.000Z"
+  },
+  {
+    "id": "case-suspect-x",
+    "bookId": "book-suspect-x",
+    "title": "Hồ sơ Phía sau nghi can X",
+    "theme": "noir",
+    "nodes": [
+      {
+        "id": "sx-n-ishigami",
+        "type": "suspect",
+        "position": { "x": 100, "y": 80 },
+        "data": {
+          "label": "Ishigami Tetsuya",
+          "role": "Giáo viên toán học",
+          "suspectStatus": "prime",
+          "suspicionLevel": 90,
+          "motive": "Bảo vệ mẹ con hàng xóm Yasuko",
+          "chapter": 5,
+          "description": "Thiên tài toán học bày ra bài toán ngoại phạm hoàn hảo."
+        }
+      },
+      {
+        "id": "sx-n-yasuko",
+        "type": "suspect",
+        "position": { "x": 420, "y": 80 },
+        "data": {
+          "label": "Hanaoka Yasuko",
+          "role": "Vợ cũ nạn nhân",
+          "suspectStatus": "alibi",
+          "suspicionLevel": 70,
+          "motive": "Tự vệ trước chồng cũ Togashi",
+          "chapter": 2,
+          "description": "Có vé xem phim và hóa đơn quán ramen vào tối ngày 10/3."
+        }
+      },
+      {
+        "id": "sx-n-clue-body",
+        "type": "clue",
+        "position": { "x": 100, "y": 320 },
+        "data": {
+          "label": "Xác chết cháy mặt & dấu vân tay bị đốt",
+          "reliability": "verified",
+          "chapter": 4,
+          "description": "Tìm thấy bên bờ sông Edogawa kèm chiếc xe đạp mới."
+        }
+      },
+      {
+        "id": "sx-n-alibi-cinema",
+        "type": "alibi",
+        "position": { "x": 420, "y": 320 },
+        "data": {
+          "label": "Ngoại phạm rạp chiếu phim (10/3)",
+          "timeLabel": "19:00 - 21:30",
+          "witness": "Con gái Misato & vé phim",
+          "alibiVerified": true,
+          "chapter": 6,
+          "description": "Chứng cứ ngoại phạm quá khớp cho ngày 10/3 — liệu ngày gây án có khác?"
+        }
+      },
+      {
+        "id": "sx-n-sticky-swap",
+        "type": "sticky",
+        "position": { "x": 260, "y": 500 },
+        "data": {
+          "label": "Giả thuyết hoán đổi ngày tử vong!",
+          "stickyColor": "pink",
+          "chapter": 12,
+          "page": 215,
+          "sourceNoteId": "note-15",
+          "description": "Nếu nạn nhân bên sông không phải Togashi bị giết ngày 10/3, mà là một vụ án khác ngày 11/3?"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "sx-e-1",
+        "source": "sx-n-ishigami",
+        "target": "sx-n-yasuko",
+        "label": "Dàn dựng che giấu",
+        "kind": "suspect"
+      },
+      {
+        "id": "sx-e-2",
+        "source": "sx-n-yasuko",
+        "target": "sx-n-alibi-cinema",
+        "label": "Ngoại phạm tối 10/3",
+        "kind": "alibi"
+      },
+      {
+        "id": "sx-e-3",
+        "source": "sx-n-sticky-swap",
+        "target": "sx-n-alibi-cinema",
+        "label": "Phản bác ngày gây án",
+        "kind": "contradicts"
+      },
+      {
+        "id": "sx-e-4",
+        "source": "sx-n-sticky-swap",
+        "target": "sx-n-clue-body",
+        "label": "Nạn nhân thay thế",
+        "kind": "related"
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "hyp-sx-1",
+        "title": "Ishigami đánh tráo nạn nhân và ngày án mạng để ngoại phạm ngày 10/3 đứng vững",
+        "suspectNodeId": "sx-n-ishigami",
+        "status": "investigating",
+        "supportingNodeIds": ["sx-n-clue-body", "sx-n-sticky-swap"],
+        "contradictingNodeIds": ["sx-n-alibi-cinema"],
+        "notes": "Điểm mấu chốt là giải thích vì sao vết cháy dấu vân tay lại quá lộ liễu."
+      }
+    ],
+    "createdAt": "2026-11-15T10:00:00.000Z",
+    "updatedAt": "2026-11-25T22:00:00.000Z"
+  }
+]
